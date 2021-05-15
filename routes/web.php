@@ -25,3 +25,12 @@ $router->get('/employee-list', 'EmployeeController@listData');
 $router->post('/employee-create', 'EmployeeController@create');
 $router->delete('/employee-delete', 'EmployeeController@delete');
 $router->put('/employee-update', 'EmployeeController@update');
+
+// QUERY BUILDER
+$router->get('query-builder-list', 'QueryBuilderController@getEmployees');
+$router->get('single-row', 'QueryBuilderController@singleRow');
+$router->get('pluck', 'QueryBuilderController@pluck');
+//crud
+$router->post('insert', 'QueryBuilderController@insert');
+$router->put('update', 'QueryBuilderController@update');
+$router->delete('delete', 'QueryBuilderController@delete');
